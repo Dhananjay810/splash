@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+
+        .header, .footer{
+            background-color: #001627;
+            color: white;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card{
+            width: 100vw;
+            height: 100vh;
+            background: rgb(20,50,100,0.8);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .image{
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.3);
+        }
+
+        .card-content{
+            position: absolute;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            justify-content:right;
+            /* align-items: center; */
+        }
+
+        .a{
+            position: absolute;
+            z-index: 2;
+            left: 10%;
+            top: 10%;
+            width: 100%;
+            height: 100%;
+
+        }
+        
+        .o1{
+            position: relative;
+            z-index: 2;
+            left: 20%;
+            top: 20%;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .o2{
+            position: absolute;
+            z-index: 2;
+            left: 20%;
+            top: 200%;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .o3{
+            position: absolute;
+            z-index: 2;
+            left: 15%;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        ul{
+            position: relative;
+            left: 10%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-right: 10px;
+        }
+
+        .x{
+            position: relative;
+            left: 5%;
+        }
+
+        .map{
+            position: absolute;
+            z-index: 2;
+            left: 10%;
+            top: 10%;
+            display: flex;
+            justify-content: center;
+            filter: brightness(0.7);
+            border-radius: 30px;
+        }
+
+        .maap{
+            position: absolute;
+            z-index: 2;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            filter: brightness(0.7);
+            border-radius: 30px;
+        }
+
+        .pro{
+            position: absolute;
+            z-index: 2;
+            left: 10%;
+            display: flex;
+            justify-content: center;
+            filter: brightness(0.7);
+            width: 600px;
+            border-radius: 30px;
+        }
+
+        .d,.e{
+            position: absolute;
+            left: 48%;
+            top: 10%;
+        }
+
+        .e{
+            position: absolute;
+            left: 48%;
+            top: 10%;
+            right: 20%;
+        }
+
+        .f{
+            position: absolute;
+            left: 52%;
+            top: 15%;
+        }
+
+        li{
+            padding: 4px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="header"></div>
+
+    <div>
+    <div class="card">
+        <img class="image" src="global.png" alt="">
+        
+        <h3 class="a">Global Market Analysis of MRF</h3>
+        <ol class="o1">
+            <li>Market Presence:
+                <ul class="u">
+                    <li>
+                        MRF has a significant presence in the global market, especially in regions like Asia-Pacific, the Middle East, and Africa.
+                    </li>
+                    <li>
+                        The company exports its products to over 65 countries, leveraging its strong brand reputation and quality products.
+                    </li>
+                </ul>
+            </li>
+            <li>Product Range:
+                <ul class="u">
+                    <li>
+                        MRF offers a wide range of products including tires for passenger cars, trucks, motorcycles, farm vehicles, and industrial equipment.
+                    </li>
+                    <li>
+                        The company's diverse product portfolio helps it cater to different market segments and regions.
+                    </li>
+                </ul>
+            </li>
+            <li>Competitive Landscape:
+                <ul class="u">
+                    <li>
+                        MRF faces competition from global tire manufacturers like Bridgestone, Michelin, Goodyear, Continental, and Pirelli.
+                    </li>
+                    <li>
+                        Despite the competition, MRF maintains a strong market position due to its focus on quality, innovation, and customer service.
+                    </li>
+                </ul>
+            </li>
+            <li>Technological Advancements:
+                <ul class="u">
+                    <li>
+                        MRF invests significantly in research and development to improve product quality and performance.
+                    </li>
+                    <li>
+                        The company has several advanced manufacturing facilities equipped with state-of-the-art technology.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        
+    </div>
+    <div class="card">
+        <img class="image" src="office.jpg" alt="">
+        <img class="map" src="map.png" alt="">
+        <div class="card-content">
+            <div class="d">
+                <h3>Corporate Headquarters</h3>
+                <ol class="o2">
+                    <li>Location:
+                        <ul class="u">
+                            <li>
+                                MRF's corporate headquarters is located in Chennai, Tamil Nadu, India.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Functionality:
+                        <ul class="u">
+                            <li>
+                                The headquarters oversees global operations, strategic planning, and management decisions.
+                            </li>
+                            <li>
+                                It also houses departments like finance, marketing, human resources, and research and development.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            </div>
+    </div>
+    <div class="card">
+        <img class="image" src="factory.jpg" alt="">
+        <img class="maap" src="maap.png" alt="">
+        <div class="card-content">
+            <div class="e">
+                <h3>Establishment</h3>
+                <ul>
+                    <li>
+                        MRF, which stands for Madras Rubber Factory, is a well-known Indian multinational company that primarily manufactures rubber products, including tyres, tubes, treads, and conveyor belts. It was founded in 1946 by K. M. Mammen Mappillai and is headquartered in Chennai, India.
+                    </li>
+                    <li>
+                        MRF is particularly renowned for its tyres and is one of the largest tyre manufacturers in India. It has a significant presence in the automotive industry and exports its products to several countries around the world. The company also sponsors various sports events and teams, notably in cricket and motorsports, further enhancing its brand visibility.
+                    </li>
+                </ul>
+                <h3>Location:</h3>
+                <ol class="o3">
+                    <li>Tamil Nadu</li>
+                    <li>Telangana</li>
+                    <li>Kerala</li>
+                    <li>Gujarat</li>
+                    <li>Uttar Pradesh</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <img class="image" src="product.webp" alt="">
+        <img class="pro" src="pro.jpg" alt="">
+        <div class="card-content">
+            <div class="f">
+                <h3>Our Products:</h3>
+                <ol>
+                    <li>Passenger Cars:
+                        <ul class="x">
+                            <li>
+                                MRF produces tyres specifically designed for passenger cars, focusing on comfort, performance, and durability. They offer different series such as ZVTS, ZLO, and Perfinza for various needs and preferences.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>SUVs and MUVs:
+                        <ul class="x">
+                            <li>
+                                MRF provides tyres suitable for Sports Utility Vehicles (SUVs) and Multi-Utility Vehicles (MUVs), which emphasize robustness, off-road capability, and stability. Examples include the Wanderer series.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Two-Wheelers:
+                        <ul class="x">
+                            <li>
+                                MRF manufactures tyres for motorcycles and scooters, ensuring grip, handling, and safety on different road surfaces. Popular models include Nylogrip and Revz series.
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            </div>
+        
+    </div> 
+    </div>
+
+    <div class="footer"></div>
+
+</body>
+</html>
